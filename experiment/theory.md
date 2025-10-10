@@ -1,6 +1,6 @@
-# Implementation of Up/Down Counter
 
-## (a) To Implement an Up/Down Counter Using Two General Purpose I/O Pins as Control Inputs.
+
+### (a) To Implement an Up/Down Counter Using Two General Purpose I/O Pins as Control Inputs.
 
 #### **Introduction**
 An Up/Down Counter is a digital circuit that counts numbers either in increasing (up) or decreasing (down) order based on a control signal. This experiment demonstrates a single-digit up/down counter implemented using the 89C51 microcontroller. Two general-purpose I/O pins are configured as control inputs for incrementing or decrementing the count. The current count is displayed on a single 7-segment display with a counting range of 0–9.
@@ -32,7 +32,7 @@ Since only a single digit is used, the counter can display values from 0 to 9. W
 The single-digit up/down counter has applications in educational experiments, small digital counters, and as a basic demonstration of microcontroller I/O and 7-segment display interfacing. Its simplicity makes it ideal for learning purposes.
 
 
-## (b) To Implement an Up/Down Counter Using One Interrupt Pin as a Control Pin.
+### (b) To Implement an Up/Down Counter Using One Interrupt Pin as a Control Pin.
 
 An Up/Down Counter is a digital circuit that counts numbers either in increasing (up) or decreasing (down) order based on a control signal. In this experiment, we use one external interrupt pin (INT0) of the 8051 microcontroller to toggle the counting direction. The counter is implemented on a single 7-segment display that shows digits from 0 to 9. Since only one display is used, the counter is limited to one decimal digit.
 
