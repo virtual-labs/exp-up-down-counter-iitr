@@ -1,0 +1,278 @@
+body {
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  margin: 0;
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+.header {
+  font-family: serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.header-link {
+  text-decoration: underline;
+  font-size: 2rem;
+  color: rgb(44 153 206);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  min-height: 80vh;
+  margin-bottom: 3rem;
+  
+}
+
+.card {
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.editor-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.editor-label {
+  font-weight: 500;
+}
+
+#codeEditor {
+  width: 100%;
+  min-height: 200px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.tip-text {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.control-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.updown-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.validation-message {
+  color: green;
+  font-weight: 600;
+}
+
+.btn-green {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-blue {
+  background-color: rgb(44 153 206);
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  border: none;
+  color:white;
+  cursor:pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s;
+  font-weight:600;
+}
+
+.btn-blue:hover {
+  background-color: #1e3a8a;
+}
+
+.btn-red {
+  background-color: #ef4444;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  border: none;
+  color:white;
+  cursor:pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s;
+  font-weight:600;
+}
+
+.btn-red:hover {
+  background-color: #dc2626;
+}
+
+.btn-yellow {
+  background-color: #f59e0b;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  border: none;
+  color:white;
+  cursor:pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s;
+  font-weight:600;
+}
+
+.btn-yellow:hover {
+  background-color: #d97706;
+}
+
+.btn-disabled {
+  background-color: #94a3b8;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  border: none;
+  color:white;
+  cursor:not-allowed;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s;
+  font-weight:600;
+}
+
+.seven-seg {
+  margin-top: 1rem;
+  width: 100px;
+  height: 180px;
+  background-color: black;
+  padding: 10px 10px 1px 15px;
+  border-radius: 0.5rem;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  height: 80vh;
+  max-width: 650px;
+  width: 90%;
+}
+
+.popups {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.popups-content {
+  background-color: white;
+  padding: 10px 1rem 10px 1rem;
+  border-radius: 1.5rem;
+  height: auto;
+  overflow: auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+.popupi {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.popupi-content {
+  background-color: white;
+  padding: 1rem ;
+  border-radius: 1.5rem;
+  height: 80vh;
+  max-width: 450px;
+  width: 90%;
+}
+
+.abc{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+#sampleCodeBlock{
+  height: 60vh;
+  overflow: auto;
+  background-color: #dce1ea;
+  padding: 5px;
+  border-radius: 0.5rem;
+}
+
+.heading{
+  margin: 10px 0px 3px 0px;
+  font-size: large;
+}
+
+.diagram{
+  text-align: center;
+}
+
+.scrollable {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.popup-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
