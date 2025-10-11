@@ -1,4 +1,4 @@
-## Procedure
+
 
 ### (a) To Implement an Up/Down Counter Using Two General Purpose I/O Pins as Control Inputs.
 1. Click on **View Circuit Diagram** to see how the 8051, 7-segment display, and control pins are connected in logic diagram and in block diagram.
