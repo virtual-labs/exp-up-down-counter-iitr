@@ -1,0 +1,102 @@
+[
+  {
+    "question": "If both P1.0 and P1.1 are high at the same time in the Up/Down counter program, what will happen?",
+    "answers": {
+      "a": "Counter will increment",
+      "b": "Counter will decrement",
+      "c": "Counting stops",
+      "d": "Counter will reset"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What does the MOV P1, #0FFH instruction do?",
+    "answers": {
+      "a": "Sets P1 as output",
+      "b": "Clears P1",
+      "c": "Sets P1 as input",
+      "d": "Increments P1"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In the Up/Down counter code, what is the function of MOV P2, A?",
+    "answers": {
+      "a": "Reads input from P2",
+      "b": "Outputs the counter value to LEDs",
+      "c": "Resets the counter",
+      "d": "Increments the accumulator"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What happens when the counter reaches 0x10 and is incremented?",
+    "answers": {
+      "a": "It becomes 0x11",
+      "b": "It resets to 0x00",
+      "c": "It halts",
+      "d": "It overflows"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What is the purpose of the DJNZ instruction in the delay subroutine?",
+    "answers": {
+      "a": "Jump if zero",
+      "b": "Decrease and jump if not zero",
+      "c": "Delay until input",
+      "d": "Divide by zero"
+    },
+    "correctAnswer": "b"
+  },
+   {
+    "question": "What is the role of the INT0 pin (P3.2) in this experiment?",
+    "answers": {
+      "a": "To start the counter",
+      "b": "To reset the counter",
+      "c": "To toggle the counting direction (UP/DOWN)",
+      "d": "To display output on 7-segment"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In the assembly program, what does the instruction SETB IT0 do?",
+    "answers": {
+      "a": "Enables timer interrupt",
+      "b": "Configures INT0 as edge-triggered",
+      "c": "Configures INT0 as level-triggered",
+      "d": "Enables serial communication"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Which port of the 8051 is used to send data to the 7-segment display in this experiment?",
+    "answers": {
+      "a": "P0",
+      "b": "P1",
+      "c": "P2",
+      "d": "P3"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What happens inside the ISR (Interrupt Service Routine) when INT0 is triggered?",
+    "answers": {
+      "a": "The counter resets to zero",
+      "b": "The counting speed is doubled",
+      "c": "The counting direction is reversed",
+      "d": "The display is refreshed"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "If the counter is in UP mode and currently at 9, what will be the next value displayed?",
+    "answers": {
+      "a": "10",
+      "b": "0",
+      "c": "8",
+      "d": "It will stop"
+    },
+    "correctAnswer": "b"
+  }
+]

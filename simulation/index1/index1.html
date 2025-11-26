@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Labs | Microcontroller Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="header">
+    <a href="#" class="header-link">Up/Down Counter</a>
+  </p>
+
+  <div class="container">
+    <div class="card">
+      <div class="top-buttons">
+        <button id="instructionsBtn" class="btn-yellow">Read Instructions</button>
+      </div>
+
+      <div class="editor-section">
+        <label class="editor-label">Assembly Code Editor</label>
+        <textarea id="codeEditor" placeholder="Write your 8051 assembly code here..."></textarea>
+        <div class="tip-text">Tip: Click "View Assembly Code" then "Use Code" to copy it into the editor.</div>
+      </div>
+
+      <div class="control-buttons">
+        <button id="circuitBtn" class="btn-blue">View Circuit Diagram</button>
+        <button id="sampleBtn" class="btn-blue">View Assembly Code</button>
+        <button id="checkBtn" class="btn-blue">Check Code</button>
+        <button id="downloadBtn" class="btn-blue">Download Code</button>
+      </div>
+
+      <div id="validationMessage" class="validation-message"></div>
+
+      <div class="updown-buttons">
+        <button id="upBtn" class="btn-disabled" disabled>UP (P2.0)</button>
+        <button id="downBtn" class="btn-disabled" disabled>DOWN (P2.1)</button>
+        <button id="resetBtn" class="btn-red">RESET</button>
+      </div>
+
+      <div id="sevenSegDisplay" class="seven-seg"></div>
+    </div>
+  </div>
+
+  <!-- Popups -->
+  <div id="samplePopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Up/Down Assembly Code</h2>
+      <pre id="sampleCodeBlock"></pre>
+      <div class="popup-buttons">
+        <button id="useCodeBtn" class="btn-blue">Use Code</button>
+        <button id="closeSampleBtn" class="btn-red">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="circuitPopup" class="popups hidden">
+    <div class="popups-content">
+      <p class="heading">Components used in this experiment: <b>8051 Microcontroller, DISP0, SW0, SW1.</b></p>
+      <p class="heading">Flow of circuit: <b>SW0/SW1(Up/Down) ⟶ P2.0/P2.1(8051) ⟶ P1(8051) ⟶ DISP0.</b></p>
+      <div id="circuitImageContainer" class="diagram"></div>
+      <div class="popup-buttons">
+        <button id="toggleDiagramBtn" class="btn-blue">View Block Diagram</button>
+        <button id="closeCircuitBtn" class="btn-red">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="instructionsPopup" class="popupi hidden">
+    <div class="popupi-content scrollable">
+      <h2>Instructions</h2>
+      <ol class="abc">
+        <li>Click <b>View Circuit Diagram</b> to see how the 8051, 7-segment display, and control pins are connected in logic diagram and in block diagram.</li>
+        <li>Click <b>View Assembly Code</b> to analyse the assembly code used for this experiment.</li>
+        <li>Now according to your analysis write your code in the <b>Assembly Code Editor</b>.</li>
+        <li>Click <b>Check Code</b> to verify your program against the given code.
+          <ul >
+            <li>If correct → a success message will appear and up/down button will be enabled.</li>
+            <li>If incorrect → you’ll be asked to review and correct your program.</li>
+          </ul>
+        </li>
+        <li>(Optional) You can directly copy code into editor by clicking on <b>Use Code</b> in View Assembly code popup.</li>
+        <li>After validation, you can run the simulation. The 7-segment display will count in range of 0 to 9.</li>
+        <li>Click <b>UP (P2.0)</b> to increment the value.</li>
+        <li>Click <b>DOWN (P2.1)</b> to decrement the value.</li>
+        <li>If both up and down were clicked value doesn't change.</li>
+        <li>If you want to save your program, click <b>Download Code</b>. It will be stored as <code>your_code.asm</code>.</li>
+        <li>Click <b>Reset</b> to stop the simulation, clear the editor, and reset everything to default.</li>
+      </ol>
+      <button id="closeInstructionsBtn" class="btn-red">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    © Copyright 2025 Virtual Labs, IIT Roorkee
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

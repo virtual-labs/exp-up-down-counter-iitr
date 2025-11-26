@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which pins of the 8051 are typically used as general-purpose I/O?",
+    "answers": {
+      "a": "P0 to P3",
+      "b": "P4 to P7",
+      "c": "TX and RX",
+      "d": "T0 and T1"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What is the primary function of the Accumulator (A register) in 8051?",
+    "answers": {
+      "a": "Store program counter",
+      "b": "Perform arithmetic/logical operations",
+      "c": "Access external memory",
+      "d": "Enable interrupts"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What should be written to a port pin in 8051 to use it as input?",
+    "answers": {
+      "a": "0",
+      "b": "1",
+      "c": "FF",
+      "d": "No need to write anything"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the maximum value that an 8-bit counter can hold in 8051?",
+    "answers": {
+      "a": "99",
+      "b": "100",
+      "c": "127",
+      "d": "255"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Which instruction is used to check if a particular bit is set in 8051 assembly?",
+    "answers": {
+      "a": "JNZ",
+      "b": "JC",
+      "c": "JB",
+      "d": "MOV"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What does INT0 refer to in 8051?",
+    "answers": {
+      "a": "Timer pin",
+      "b": "External interrupt pin",
+      "c": "Serial communication pin",
+      "d": "Data bus pin"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Which pin of the 8051 microcontroller is used as the external interrupt INT0?",
+    "answers": {
+      "a": "P3.0",
+      "b": "P3.2",
+      "c": "P3.4",
+      "d": "P1.0"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the purpose of the RETI instruction?",
+    "answers": {
+      "a": "Ends the program",
+      "b": "Returns from main",
+      "c": "Returns from interrupt",
+      "d": "Restarts 8051"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What is the role of EA in IE register?",
+    "answers": {
+      "a": "Enables timer",
+      "b": "Enables all interrupts globally",
+      "c": "Disables I/O ports",
+      "d": "Enables serial port only"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Which port is used in this experiment to show output?",
+    "answers": {
+      "a": "P0",
+      "b": "P1",
+      "c": "P2",
+      "d": "P3"
+    },
+    "correctAnswer": "b"
+  }
+]
